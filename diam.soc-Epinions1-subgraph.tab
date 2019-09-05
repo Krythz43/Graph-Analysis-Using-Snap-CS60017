@@ -1,0 +1,18 @@
+#
+# soc-Epinions1-subgraph - shortest path. G(27407, 102004). Diam: avg:4.29  eff:5.02  max:13 (Wed Sep  4 23:10:26 2019)
+#
+# Number of hops	Number of shortest paths
+0	27407
+1	204008
+2	1.06071e+07
+3	1.13445e+08
+4	2.70362e+08
+5	1.78384e+08
+6	5.26621e+07
+7	1.04377e+07
+8	1.61737e+06
+9	239962
+10	32508
+11	3162
+12	270
+13	10
