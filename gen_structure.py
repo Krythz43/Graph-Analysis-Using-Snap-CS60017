@@ -18,11 +18,12 @@ try:
     G=snap.LoadEdgeList(snap.PUNGraph,path,0,1)
 except:
     print "[ERROR: GRAPH NOT FOUND] Please check the graph file name and try again. Ensure the edge list is stored in subgraphs folder"
+    exit()
 
-degree = G.GetNodes()
+nodes = G.GetNodes()
 edges = G.GetEdges()
 
-print "Number of nodes in {0}: {1}".format(GName[:-10],degree)
+print "Number of nodes in {0}: {1}".format(GName[:-10],nodes)
 print "Number of edges in {0}: {1}".format(GName[:-10],edges)
 
 
