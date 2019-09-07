@@ -1,5 +1,5 @@
 #
-# soc-Epinions1-subgraph - out-degree Distribution. G(27407, 102004). 4297 (0.1568) nodes with out-deg > avg deg (7.4), 2639 (0.0963) with >2*avg.deg (Fri Sep  6 19:13:50 2019)
+# soc-Epinions1-subgraph - out-degree Distribution. G(27407, 102004). 4297 (0.1568) nodes with out-deg > avg deg (7.4), 2639 (0.0963) with >2*avg.deg (Fri Sep  6 23:29:43 2019)
 #
 
 set title "soc-Epinions1-subgraph - out-degree Distribution. G(27407, 102004). 4297 (0.1568) nodes with out-deg > avg deg (7.4), 2639 (0.0963) with >2*avg.deg"
