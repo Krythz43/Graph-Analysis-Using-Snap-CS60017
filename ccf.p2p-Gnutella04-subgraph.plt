@@ -1,5 +1,5 @@
 #
-# p2p-Gnutella04-subgraph - clustering coefficient. G(10876, 39994). Average clustering: 0.0062  OpenTriads: 515892 (0.9982)  ClosedTriads: 934 (0.0018) (Fri Sep  6 19:15:41 2019)
+# p2p-Gnutella04-subgraph - clustering coefficient. G(10876, 39994). Average clustering: 0.0062  OpenTriads: 515892 (0.9982)  ClosedTriads: 934 (0.0018) (Sat Sep  7 20:38:48 2019)
 #
 
 set title "p2p-Gnutella04-subgraph - clustering coefficient. G(10876, 39994). Average clustering: 0.0062  OpenTriads: 515892 (0.9982)  ClosedTriads: 934 (0.0018)"

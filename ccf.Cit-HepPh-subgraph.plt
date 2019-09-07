@@ -1,5 +1,5 @@
 #
-# Cit-HepPh-subgraph - clustering coefficient. G(16608, 103954). Average clustering: 0.2616  OpenTriads: 2806109 (0.9490)  ClosedTriads: 150897 (0.0510) (Fri Sep  6 19:14:42 2019)
+# Cit-HepPh-subgraph - clustering coefficient. G(16608, 103954). Average clustering: 0.2616  OpenTriads: 2806109 (0.9490)  ClosedTriads: 150897 (0.0510) (Sat Sep  7 20:37:40 2019)
 #
 
 set title "Cit-HepPh-subgraph - clustering coefficient. G(16608, 103954). Average clustering: 0.2616  OpenTriads: 2806109 (0.9490)  ClosedTriads: 150897 (0.0510)"

@@ -1,5 +1,6 @@
 import sys
 import snap
+import numpy as np
 
 
 
@@ -90,17 +91,35 @@ def solve_degree_based_questions(G,GName):
 
 
 def solve_shortest_path_based_questions(G,GName):
-    # 
-
-    # effdiam1 = snap.GetBfsEffDiamAll(G, 10, False)
-    # print diam1
-    # effdiam2 = snap.GetBfsEffDiamAll(G, 100, False)
-    # print diam2
-    # effdiam3 = snap.GetBfsEffDiamAll(G, 1000, False)
-    # print diam3
 
 
-    # snap.PlotShortPathDistr(G, GName[:-10], GName[:-10]+" - shortest path")
+    Fulldiam1 = snap.GetBfsFullDiam(G, 10, False)
+    print "Approximate full diameter in {0} with sampling {1} nodes: {2}".format(GName[:-10],10,Fulldiam1)
+    Fulldiam2 = snap.GetBfsFullDiam(G, 100, False)
+    print "Approximate full diameter in {0} with sampling {1} nodes: {2}".format(GName[:-10],100,Fulldiam2)
+    Fulldiam3 = snap.GetBfsFullDiam(G, 1000, False)
+    print "Approximate full diameter in {0} with sampling {1} nodes: {2}".format(GName[:-10],1000,Fulldiam3)
+
+    temp = np.array([Fulldiam1,Fulldiam2,Fulldiam3])
+
+    print "Approximate full diameter in {0} with sampling nodes (mean and variance): {1}, {2}".format(GName[:10],np.mean(temp),np.var(temp))
+
+
+
+
+    effdiam1 = snap.GetBfsEffDiam(G, 10, False)
+    print "Approximate Effective diameter in {0} with sampling {1} nodes: {2}".format(GName[:-10],10,effdiam1)
+    effdiam2 = snap.GetBfsEffDiam(G, 100, False)
+    print "Approximate Effective diameter in {0} with sampling {1} nodes: {2}".format(GName[:-10],100,effdiam2)
+    effdiam3 = snap.GetBfsEffDiam(G, 1000, False)
+    print "Approximate Effective diameter in {0} with sampling {1} nodes: {2}".format(GName[:-10],1000,effdiam3)
+
+    temp = np.array([effdiam1,effdiam2,effdiam3])
+
+    print "Approximate full diameter in {0} with sampling nodes (mean and variance): {1}, {2}".format(GName[:10],np.mean(temp),np.var(temp))
+
+
+    snap.PlotShortPathDistr(G, GName[:-10], GName[:-10]+" - shortest path")
 
     filename="diam."+GName[:-10]+".png"
     print "Shortest path distribution of {0} is in: {1}".format(GName[:-10],filename)

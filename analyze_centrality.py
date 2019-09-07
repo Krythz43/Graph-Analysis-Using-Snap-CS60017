@@ -34,6 +34,29 @@ def fetch_graph():
 
 
 
+def calculate_degree_centrality(G,GName,Nodes,nodes,edges):
+    
+    print "Initialting Calculations of Degree using inbuilt function"
+    
+    start_time = time.time()
+
+    closeness_centralities = []
+
+    for NI in G.Nodes():
+        CloseCentr = snap.GetClosenessCentr(G, NI.GetId())
+        closeness_centralities.append([CloseCentr,NI.GetId()])
+
+    closeness_centralities.sort(reverse=True)
+
+    time_taken = time.time() - start_time
+    print "Execution for Cetweeness Centrality completed in ",time_taken//60," mins and ",(time_taken//1)%60, "seconds"
+
+    return closeness_centralities
+
+
+
+
+
 
 
 
@@ -52,7 +75,7 @@ def calculate_closeness_centrality(G,GName,Nodes,nodes,edges):
     closeness_centralities.sort(reverse=True)
 
     time_taken = time.time() - start_time
-    print "Execution for Cetweeness Centrality completed in ",time_taken//60," mins and ",(time_taken//1)%60, "seconds"
+    print "Execution for Closeness Centrality completed in ",time_taken//60," mins and ",(time_taken//1)%60, "seconds"
 
     return closeness_centralities
 
@@ -93,6 +116,7 @@ def calculate_betweeness_centrality(G,GName,Nodes,nodes,edges):
 
 
 def get_top_10(arg_list):
+
     return arg_list[:10]
 
 
@@ -108,6 +132,29 @@ def print_values(method_name, arg_list):
     for i in range(len(arg_list)):
         print "{0} \t node = {1} \t  centrality = {2}".format(i+1,arg_list[i][1],arg_list[i][0])
 
+
+def get_values_to_be_compared_with():
+    
+    closeness_centralities = [195,444,273,78,516,423,639,588,1077,378]
+    betweeness_centralities = [273,588,195,543,516,1824,4746,444,213,5022]
+
+    return closeness_centralities,betweeness_centralities
+
+
+
+def compare_top_10(centrality_type,calculated_values,generated_values_with_inbuilt):
+
+    number_of_overlaps = 0
+
+    generated_values = []
+    for X in generated_values_with_inbuilt:
+        generated_values.append(X[1])
+
+    for NI in calculated_values:
+        if NI in generated_values:
+            number_of_overlaps = number_of_overlaps + 1
+
+    print "Number of overlaps for {0}: {1}".format(centrality_type,number_of_overlaps)
 
 
 
@@ -129,3 +176,8 @@ if __name__ == "__main__":
 
     print_values("Closeness Centraliry" , closeness_top10)
     print_values("Betweeness Centrality" , betweeness_top10)
+
+    closeness_calculated_values,betweeness_calculated_values = get_values_to_be_compared_with()
+
+    compare_top_10("Closeness Centrality",closeness_calculated_values,closeness_top10)
+    compare_top_10("Betweeness Centrality",betweeness_calculated_values,betweeness_top10)

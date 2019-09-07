@@ -1,5 +1,5 @@
 #
-# soc-Epinions1-subgraph - scc distribution. G(27407, 102004). Largest component has 0.921626 nodes (Fri Sep  6 23:29:43 2019)
+# soc-Epinions1-subgraph - scc distribution. G(27407, 102004). Largest component has 0.921626 nodes (Sat Sep  7 23:36:48 2019)
 #
 
 set title "soc-Epinions1-subgraph - scc distribution. G(27407, 102004). Largest component has 0.921626 nodes"

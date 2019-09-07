@@ -1,5 +1,5 @@
 #
-# p2p-Gnutella04-subgraph - scc distribution. G(10876, 39994). Largest component has 1.000000 nodes (Fri Sep  6 19:15:41 2019)
+# p2p-Gnutella04-subgraph - scc distribution. G(10876, 39994). Largest component has 1.000000 nodes (Sat Sep  7 20:38:47 2019)
 #
 
 set title "p2p-Gnutella04-subgraph - scc distribution. G(10876, 39994). Largest component has 1.000000 nodes"

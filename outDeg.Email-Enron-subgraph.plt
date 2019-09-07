@@ -1,5 +1,5 @@
 #
-# Email-Enron-subgraph - out-degree Distribution. G(7275, 18453). 1252 (0.1721) nodes with out-deg > avg deg (5.1), 683 (0.0939) with >2*avg.deg (Wed Sep  4 23:59:54 2019)
+# Email-Enron-subgraph - out-degree Distribution. G(7275, 18453). 1252 (0.1721) nodes with out-deg > avg deg (5.1), 683 (0.0939) with >2*avg.deg (Sat Sep  7 20:38:07 2019)
 #
 
 set title "Email-Enron-subgraph - out-degree Distribution. G(7275, 18453). 1252 (0.1721) nodes with out-deg > avg deg (5.1), 683 (0.0939) with >2*avg.deg"
